@@ -1,0 +1,1 @@
+ping.exe -t HOSTNAME|ForEach-Object{"{0} - {1}" -f (Get-Date),$_} > C:\location.txt

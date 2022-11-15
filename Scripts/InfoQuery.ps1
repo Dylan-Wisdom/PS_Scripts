@@ -58,9 +58,9 @@ if ( $tb ) {
 
 write-output "Driver List (Press Ctrl+F to Search):" >> $OutFile 
 
-Get-WmiObject Win32_PnPSignedDriver |Select devicename, driverversion |sort devicename | 
+Get-WmiObject Win32_PnPSignedDriver | Select-Object devicename, driverversion | Sort-Object devicename | 
 
-where { 
+Where-Object { 
 
 $_.DeviceName -like "*Intel(R)*" -or 
 
