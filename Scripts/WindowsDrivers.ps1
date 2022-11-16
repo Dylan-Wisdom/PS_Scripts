@@ -1,1 +1,1 @@
-Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion
+Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion | Export-Csv -Path 'C:\Users\Dylanw\Desktop\Services.csv'
