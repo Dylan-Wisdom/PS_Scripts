@@ -1,1 +1,1 @@
-ping.exe -t HOSTNAME|ForEach-Object{"{0} - {1}" -f (Get-Date),$_} > C:\location.txt
+ping.exe -t KC-QADPRD-01.lincofood.local|ForEach-Object{"{0} - {1}" -f (Get-Date),$_} > C:\Users\Dylanw\Desktop\ping_qad.txt
